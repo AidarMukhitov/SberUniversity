@@ -109,10 +109,39 @@ button {
     display: flex;
     flex-direction: column;
     text-align: left;
-    margin-bottom: 10px;
 }
 
 .form form {
     display: grid;
     grid-gap: 20px;
+}
+
+.form label {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.form input {
+    font-size: 18px;
+    color: #213053;
+    height: 20px;
+    padding: 20px 0px 20px 20px;
+    border: none;
+    border-radius: 15px;
+}
+
+.form__submit {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+.form__select {
+    appearance: none;
+}
+
+.button__offer{
+    width: 100%;
+    margin-top: 25px;
 }
