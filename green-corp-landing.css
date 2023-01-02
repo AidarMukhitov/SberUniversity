@@ -43,11 +43,14 @@ button {
 }
    
 .about__sun-image {
-    width: 100px;
-    height: 100px;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    transform: translate(0px, -160px)
 }
 
 .about {
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -144,4 +147,52 @@ button {
 .button__offer{
     width: 100%;
     margin-top: 25px;
+}
+
+button:hover {
+    background-color: #f6980c;
+    box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
+
+}
+
+.ease-in {
+    transition: background-color 0.2s ease-in;
+}
+
+footer {
+    padding: 90px 20px 90px 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer__copyright {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    opacity: .5;
+    margin-top: 30px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__group {
+    margin-right: 80px;
+}
+
+.footer__group h3 {
+    font-size: 16px;
+    opacity: .7;
+    margin-bottom: 30px;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__links a {
+    margin-bottom: 15px;
 }
